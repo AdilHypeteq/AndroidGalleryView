@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:fitsSystemWindows="true">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"></androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:src="@drawable/ic_back"
+                app:tint="#d1ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_close"
+                android:text="Back"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_action"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_delete"
+            app:tint="#d8ffffff" />
+
+        <TextView
+            android:id="@+id/txtSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="dd"
+            android:textColor="#eee"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
